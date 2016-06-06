@@ -12,7 +12,7 @@ describe('<Button />', () => {
   it('should render its children', () => {
     const children = (<h1>Test</h1>);
     const renderedComponent = shallow(
-      <Button href="http://mxstbr.com">
+      <Button href="https://firebase.google.com">
         {children}
       </Button>
     );
@@ -25,7 +25,7 @@ describe('<Button />', () => {
   });
 
   it('should render an <a> tag if no route is specified', () => {
-    const renderedComponent = shallow(<Button href="http://mxstbr.com" />);
+    const renderedComponent = shallow(<Button href="https://firebase.google.com" />);
     expect(renderedComponent.find('a').length).toEqual(1);
   });
 

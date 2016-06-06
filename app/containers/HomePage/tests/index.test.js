@@ -1,59 +1,37 @@
-/**
- * Test the HomePage
- */
-
 import expect from 'expect';
 import { shallow, mount } from 'enzyme';
 import React from 'react';
 
 import { HomePage } from '../index';
-import RepoListItem from 'containers/RepoListItem';
-import List from 'components/List';
-import LoadingIndicator from 'components/LoadingIndicator';
+import H1 from 'components/H1';
 
 describe('<HomePage />', () => {
-  it('should render the loading indicator when its loading', () => {
+  it('should render its heading', () => {
     const renderedComponent = shallow(
-      <HomePage loading />
+      <HomePage />
     );
-    expect(renderedComponent.contains(<List component={LoadingIndicator} />)).toEqual(true);
+    expect(renderedComponent.contains(<H1>React-Redux project Using Firebase</H1>)).toEqual(true);
   });
 
-  it('should render an error if loading failed', () => {
+  it('should link to "/ghsearch"', () => {
+    const openRouteSpy = expect.createSpy();
+
+    // Spy on the openRoute method of the HomePage
+    const openRoute = (dest) => {
+      if (dest === '/ghsearch') {
+        openRouteSpy();
+      }
+    };
+
     const renderedComponent = mount(
-      <HomePage
-        loading={false}
-        error={{ message: 'Loading failed!' }}
-      />
+      <HomePage changeRoute={openRoute} />
     );
-    expect(
-      renderedComponent
-        .text()
-        .indexOf('Something went wrong, please try again!')
-      ).toBeGreaterThan(-1);
+    const button = renderedComponent.find('button').at(0);
+    button.simulate('click');
+    expect(openRouteSpy).toHaveBeenCalled();
   });
 
-  it('should render the repositories if loading was successful', () => {
-    const repos = [{
-      owner: {
-        login: 'mxstbr',
-      },
-      html_url: 'https://github.com/mxstbr/react-boilerplate',
-      name: 'react-boilerplate',
-      open_issues_count: 20,
-      full_name: 'mxstbr/react-boilerplate',
-    }];
-    const renderedComponent = shallow(
-      <HomePage
-        repos={repos}
-        error={false}
-      />
-    );
-
-    expect(renderedComponent.contains(<List items={repos} component={RepoListItem} />)).toEqual(true);
-  });
-
-  it('should link to /features', () => {
+  it('should link to "/features"', () => {
     const openRouteSpy = expect.createSpy();
 
     // Spy on the openRoute method of the HomePage
@@ -64,9 +42,9 @@ describe('<HomePage />', () => {
     };
 
     const renderedComponent = mount(
-      <HomePage loading changeRoute={openRoute} />
+      <HomePage changeRoute={openRoute} />
     );
-    const button = renderedComponent.find('button');
+    const button = renderedComponent.find('button').at(1);
     button.simulate('click');
     expect(openRouteSpy).toHaveBeenCalled();
   });

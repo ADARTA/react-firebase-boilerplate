@@ -32,11 +32,11 @@ body.fontLoaded {
 }
 
 .logoWrapper {
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .logo {
-  width: 100%;
+  width: 30%;
   margin: 0 auto;
   display: block;
 }

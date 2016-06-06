@@ -8,9 +8,7 @@ function Footer() {
     <footer className={styles.footer}>
       <section>
         <p>This project is licensed under the MIT license.</p>
-      </section>
-      <section>
-        <p>Made with love by <A href="https://twitter.com/mxstbr">Max Stoiber</A>.</p>
+        <p>Made with love by <A href="https://twitter.com/3_Alves">Tony Alves</A>.</p>
       </section>
     </footer>
   );

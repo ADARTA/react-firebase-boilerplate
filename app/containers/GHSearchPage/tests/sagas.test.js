@@ -12,10 +12,10 @@ import { LOAD_REPOS } from 'containers/App/constants';
 import { reposLoaded, repoLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
-import { selectUsername } from 'containers/HomePage/selectors';
+import { selectUsername } from 'containers/GHSearchPage/selectors';
 
 const generator = getGithubData();
-const username = 'mxstbr';
+const username = 'talves';
 
 describe('getGithubData Saga', () => {
   // We have to test twice, once for a successful load and once for an unsuccessful one

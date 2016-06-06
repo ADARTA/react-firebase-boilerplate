@@ -1,15 +1,15 @@
 {
-  "name": "react-boilerplate",
-  "version": "3.0.0",
+  "name": "react-firebase-boilerplate",
+  "version": "1.0.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mxstbr/react-boilerplate.git"
+    "url": "git://github.com/adarta/react-firebase-boilerplate.git"
   },
   "engines" : {
     "npm" : ">=3"
   },
-  "author": "Max Stoiber",
+  "author": "Tony Alves",
   "license": "MIT",
   "scripts": {
     "npmcheckversion": "node ./internals/scripts/npmcheckversion.js",
@@ -110,6 +110,7 @@
     "react-router": "^2.3.0",
     "react-router-redux": "^4.0.4",
     "react-router-scroll": "^0.2.0",
+    "reactfire": "^1.0.0",
     "redux": "^3.5.2",
     "redux-immutable": "^3.0.6",
     "redux-saga": "^0.10.0",

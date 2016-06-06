@@ -25,8 +25,8 @@ describe('<A />', () => {
   });
 
   it('should adopt the href', () => {
-    const renderedComponent = shallow(<A href="mxstbr.com" />);
-    expect(renderedComponent.prop('href')).toEqual('mxstbr.com');
+    const renderedComponent = shallow(<A href="firebase.google.com" />);
+    expect(renderedComponent.prop('href')).toEqual('firebase.google.com');
   });
 
   it('should adopt the target', () => {

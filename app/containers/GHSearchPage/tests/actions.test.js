@@ -8,7 +8,7 @@ import {
   changeUsername,
 } from '../actions';
 
-describe('Home Actions', () => {
+describe('GHSearch Actions', () => {
   describe('changeUsername', () => {
     it('should return the correct type and the passed name', () => {
       const fixture = 'Max';

@@ -10,7 +10,7 @@ import { LOAD_REPOS } from 'containers/App/constants';
 import { reposLoaded, repoLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
-import { selectUsername } from 'containers/HomePage/selectors';
+import { selectUsername } from 'containers/GHSearchPage/selectors';
 
 // Individual exports for testing
 export function* getGithubData() {

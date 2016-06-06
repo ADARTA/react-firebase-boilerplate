@@ -10,7 +10,7 @@ describe('<App />', () => {
     const renderedComponent = shallow(
       <App />
     );
-    expect(renderedComponent.find('Img').length).toEqual(1);
+    expect(renderedComponent.find('Img').length).toEqual(4);
   });
 
   it('should render its children', () => {

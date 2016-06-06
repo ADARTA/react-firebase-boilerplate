@@ -11,18 +11,14 @@ describe('<Footer />', () => {
       <Footer />
     );
     expect(renderedComponent.contains(
-      <section>
-        <p>This project is licensed under the MIT license.</p>
-      </section>
+      <p>This project is licensed under the MIT license.</p>
     )).toEqual(true);
   });
 
   it('should render the credits', () => {
     const renderedComponent = shallow(<Footer />);
     expect(renderedComponent.contains(
-      <section>
-        <p>Made with love by <A href="https://twitter.com/mxstbr">Max Stoiber</A>.</p>
-      </section>
+      <p>Made with love by <A href="https://twitter.com/3_Alves">Tony Alves</A>.</p>
     )).toEqual(true);
   });
 });

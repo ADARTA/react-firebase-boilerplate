@@ -23,13 +23,11 @@
   <a href="https://david-dm.org/adarta/react-firebase-boilerplate#info=devDependencies">
     <img src="https://david-dm.org/adarta/react-firebase-boilerplate/dev-status.svg" alt="devDependency Status" />
   </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/ADARTA/react-firebase-boilerplate">
-    <img src="https://travis-ci.org/ADARTA/react-firebase-boilerplate.svg" alt="Build Status" />
-  </a>
-    </a>
 </div>
-<br />
+<!-- Build Status -->
+[![Build Status](https://travis-ci.org/ADARTA/react-firebase-boilerplate.svg?branch=master)](https://travis-ci.org/ADARTA/react-firebase-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/ADARTA/react-firebase-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/ADARTA/react-firebase-boilerplate?branch=master)
+
 
 <div align="center">
   <sub>This boilerplate Made with ❤︎ by <a href="https://twitter.com/talves">Tony Alves</a></sub><br /><sub>The [**original boilerplate**][1] was Made with ❤︎ by <a href="https://twitter.com/mxstbr">Max Stoiber</a> and <a href="https://github.com/mxstbr/react-boilerplate/graphs/contributors">contributors</a>. <i>If you're using this or the original boilerplate, they'd love to <a href="https://github.com/mxstbr/react-boilerplate/issues/115">hear from you</a>!</i></sub>

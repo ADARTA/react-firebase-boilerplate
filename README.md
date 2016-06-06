@@ -24,8 +24,8 @@
     <img src="https://david-dm.org/adarta/react-firebase-boilerplate/dev-status.svg" alt="devDependency Status" />
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/adarta/react-firebase-boilerplate">
-    <img src="https://travis-ci.org/adarta/react-firebase-boilerplate.svg" alt="Build Status" />
+  <a href="https://travis-ci.org/ADARTA/react-firebase-boilerplate">
+    <img src="https://travis-ci.org/ADARTA/react-firebase-boilerplate.svg" alt="Build Status" />
   </a>
     </a>
 </div>

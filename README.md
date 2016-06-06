@@ -14,16 +14,10 @@
 
 <br />
 
-<div align="center">
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/adarta/react-firebase-boilerplate">
-    <img src="https://david-dm.org/adarta/react-firebase-boilerplate.svg" alt="Dependency Status" />
-  </a>
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/adarta/react-firebase-boilerplate#info=devDependencies">
-    <img src="https://david-dm.org/adarta/react-firebase-boilerplate/dev-status.svg" alt="devDependency Status" />
-  </a>
-</div>
+<!-- Dependency Status -->
+[![Dependency Status](https://david-dm.org/adarta/react-firebase-boilerplate.svg)](https://david-dm.org/adarta/react-firebase-boilerplate)
+<!-- devDependency Status -->
+[![devDependency Status](https://david-dm.org/adarta/react-firebase-boilerplate/dev-status.svg)](https://david-dm.org/adarta/react-firebase-boilerplate#info=devDependencies)
 <!-- Build Status -->
 [![Build Status](https://travis-ci.org/ADARTA/react-firebase-boilerplate.svg?branch=master)](https://travis-ci.org/ADARTA/react-firebase-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/ADARTA/react-firebase-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/ADARTA/react-firebase-boilerplate?branch=master)
